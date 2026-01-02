@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 19px;
+}
+
+body {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: white;
+}
+
+
+
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  text-align: center;
+  z-index: 100;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #ff4ecd;
+}
+
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  animation: fadeIn 2s;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #bb469a;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+
+section {
+  padding: 60px 10%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ffccff;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1e1e3f;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 10px;
+}
+
+.card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px #ff4ecd;
+}
+
+
+.anime-list div {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  margin: 10px 0;
+  border-left: 4px solid #ff4ecd;
+  border-radius: 8px;
+}
+
+
+.btn {
+  display: block;
+  width: 250px;
+  margin: 40px auto;
+  padding: 15px;
+  text-align: center;
+  border-radius: 30px;
+  background: #ff4ecd;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px #ff4ecd;
+  transform: scale(1.1);
+}
+
+
+.quotes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  text-align: center;
+  font-style: italic;
+  line-height: 1.6;
+  margin-top: 30px;
+}
+
+.quotes p {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 18px;
+}
+
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+  gap: 20px;
+}
+
+.fact {
+  background: #2b2b5f;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+
+footer {
+  background: black;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
